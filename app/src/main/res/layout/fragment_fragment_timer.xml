@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="sharp.smartplug.FragmentTimer">
+
+    <ListView
+        android:id="@+id/timers_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        fab:menu_fab_size="normal"
+        android:layout_gravity="bottom|right"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="2dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="@color/colorPrimary"
+        fab:menu_colorPressed="@color/colorPrimaryDark"
+        fab:menu_colorRipple="@android:color/transparent"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="@color/colorPrimary"
+        fab:menu_labels_colorPressed="@color/colorPrimaryDark"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label="">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/CountDown_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_scheduler"
+            fab:fab_size="mini"
+            fab:paddingStart="10dp"
+            fab:paddingEnd="10dp"
+            fab:fab_label="Count Down Timer"
+            fab:fab_colorNormal="#B6B6B7"
+            fab:fab_colorPressed="#90B6B6B6"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/schedule_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_scheduler"
+            fab:fab_size="mini"
+            fab:fab_label="Schedule Timer"
+            fab:fab_colorNormal="#B6B6B7"
+            fab:fab_colorPressed="#90B6B6B6"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/timer_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_scheduler"
+            fab:fab_size="mini"
+            fab:fab_label="Random Timer"
+            fab:fab_colorNormal="#B6B6B7"
+            fab:fab_colorPressed="#90B6B6B6"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/Cycle_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_scheduler"
+            fab:fab_size="mini"
+            fab:fab_label="Cycle Timer Task"
+            fab:fab_colorNormal="#B6B6B7"
+            fab:fab_colorPressed="#90B6B6B6"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Smart Plug</string>
+    <string name="adddevice_name">Smart Plug</string>
+    <string name="adddevicename">Add Device</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_configure">Configure</string>
+    <string name="device_list">Device List</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
